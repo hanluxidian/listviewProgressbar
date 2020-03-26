@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+
+    <include layout="@layout/title_layout" >
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_recyclerview_add"
+            android:text="第一个fragment"
+            android:textAllCaps="false"
+            android:onClick="addFragment1"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_recyclerview_delete"
+            android:text="第二个fragment"
+            android:textAllCaps="false"
+            android:onClick="addFragment2"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_recyclerview_listview"
+            android:text="listview"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_recyclerview_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="grid"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_recyclerview_flow"
+            android:text="flow"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout_for_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+</LinearLayout>
